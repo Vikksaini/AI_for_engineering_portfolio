@@ -1,0 +1,1472 @@
+Decision Tree Rules based on SP features:
+|--- FFTE Feed flow SP <= 10199.77
+|   |--- FFTE Steam pressure SP <= 122.24
+|   |   |--- FFTE Feed flow SP <= 9300.51
+|   |   |   |--- TFE Out flow SP <= 2177.59
+|   |   |   |   |--- FFTE Steam pressure SP <= 100.96
+|   |   |   |   |   |--- FFTE Steam pressure SP <= 76.21
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- FFTE Steam pressure SP >  76.21
+|   |   |   |   |   |   |--- TFE Production solids SP <= 67.50
+|   |   |   |   |   |   |   |--- TFE Out flow SP <= 2165.16
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 8965.00
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 85.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  85.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  8965.00
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 1990.72
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -40.68
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -40.68
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  1990.72
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Out flow SP >  2165.16
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- TFE Production solids SP >  67.50
+|   |   |   |   |   |   |   |--- TFE Production solids SP <= 69.28
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 98.45
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  98.45
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Production solids SP >  69.28
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- FFTE Steam pressure SP >  100.96
+|   |   |   |   |   |--- TFE Out flow SP <= 2119.80
+|   |   |   |   |   |   |--- FFTE Feed flow SP <= 9200.56
+|   |   |   |   |   |   |   |--- FFTE Production solids SP <= 40.67
+|   |   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 122.50
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Steam pressure SP >  122.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- FFTE Production solids SP >  40.67
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 1902.35
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 64.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  64.00
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 68.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  68.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  1902.35
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 101.51
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  101.51
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 109.76
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  109.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |--- FFTE Feed flow SP >  9200.56
+|   |   |   |   |   |   |   |--- TFE Out flow SP <= 2067.64
+|   |   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 120.01
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 1749.54
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  1749.54
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 66.86
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 14
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  66.86
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |--- TFE Steam pressure SP >  120.01
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 65.96
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.95
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.95
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  65.96
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 70.54
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  70.54
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |--- TFE Out flow SP >  2067.64
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 49.25
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed tank level SP <= 42.95
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed tank level SP >  42.95
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 105.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  105.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  49.25
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 110.04
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -51.44
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -51.44
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  110.04
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2111.03
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2111.03
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |--- TFE Out flow SP >  2119.80
+|   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.02
+|   |   |   |   |   |   |   |--- TFE Out flow SP <= 2125.70
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2124.81
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2124.81
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- TFE Out flow SP >  2125.70
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.02
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -78.35
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2169.78
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2169.78
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -78.35
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 58.13
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -70.97
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -70.97
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  58.13
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- TFE Out flow SP >  2177.59
+|   |   |   |   |--- FFTE Out steam temp SP <= 49.53
+|   |   |   |   |   |--- TFE Steam pressure SP <= 120.25
+|   |   |   |   |   |   |--- FFTE Steam pressure SP <= 105.50
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -58.19
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 62.50
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  62.50
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 64.00
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 104.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  104.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  64.00
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.30
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -58.19
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 104.50
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  104.50
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -54.19
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -54.19
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -52.39
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -52.39
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- FFTE Steam pressure SP >  105.50
+|   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 41.23
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  41.23
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9250.00
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9250.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- TFE Steam pressure SP >  120.25
+|   |   |   |   |   |   |--- FFTE Feed flow SP <= 9250.00
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- FFTE Feed flow SP >  9250.00
+|   |   |   |   |   |   |   |--- TFE Production solids SP <= 62.50
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- TFE Production solids SP >  62.50
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- FFTE Out steam temp SP >  49.53
+|   |   |   |   |   |--- FFTE Out steam temp SP <= 50.34
+|   |   |   |   |   |   |--- FFTE Production solids SP <= 39.75
+|   |   |   |   |   |   |   |--- TFE Out flow SP <= 2627.31
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 112.50
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  112.50
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 57.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  57.00
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 58.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  58.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |--- TFE Out flow SP >  2627.31
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 57.41
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2687.06
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2687.06
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  57.41
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -80.00
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 112.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  112.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -80.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- FFTE Production solids SP >  39.75
+|   |   |   |   |   |   |   |--- TFE Production solids SP <= 69.46
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 8985.00
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  8985.00
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.12
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 23
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.12
+|   |   |   |   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 122.47
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- TFE Steam pressure SP >  122.47
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- TFE Production solids SP >  69.46
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 73.01
+|   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 41.85
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2225.17
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2225.17
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  41.85
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 112.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 17
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  112.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  73.01
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- FFTE Out steam temp SP >  50.34
+|   |   |   |   |   |   |--- FFTE Steam pressure SP <= 77.50
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -59.20
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -78.32
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.85
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.85
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -78.32
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -76.19
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -76.19
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -74.64
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -74.64
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -59.20
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2424.65
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2424.65
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -45.34
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -45.34
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -44.70
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -44.70
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |--- FFTE Steam pressure SP >  77.50
+|   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 87.04
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -69.45
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -69.45
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  87.04
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |--- FFTE Feed flow SP >  9300.51
+|   |   |   |--- FFTE Feed flow SP <= 9497.28
+|   |   |   |   |--- TFE Out flow SP <= 2095.09
+|   |   |   |   |   |--- FFTE Out steam temp SP <= 50.02
+|   |   |   |   |   |   |--- FFTE Steam pressure SP <= 100.20
+|   |   |   |   |   |   |   |--- FFTE Feed tank level SP <= 48.68
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2037.11
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 93.22
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  93.22
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 98.22
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  98.22
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2037.11
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- FFTE Feed tank level SP >  48.68
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 63.00
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2014.43
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2014.43
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  63.00
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -65.30
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.97
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.97
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -65.30
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- FFTE Steam pressure SP >  100.20
+|   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.00
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 68.90
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  68.90
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.00
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 62.83
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -65.16
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.45
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.45
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -65.16
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 40.64
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  40.64
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  62.83
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -54.43
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 110.98
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 15
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  110.98
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -54.43
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 1994.15
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  1994.15
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |--- FFTE Out steam temp SP >  50.02
+|   |   |   |   |   |   |--- FFTE Feed tank level SP <= 25.44
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- FFTE Feed tank level SP >  25.44
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9397.12
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2020.40
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9332.15
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9332.15
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2020.40
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9397.12
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 67.94
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 1992.15
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 65.83
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  65.83
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  1992.15
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  67.94
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 1992.74
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -78.81
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -78.81
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  1992.74
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.78
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.78
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- TFE Out flow SP >  2095.09
+|   |   |   |   |   |--- TFE Production solids SP <= 64.77
+|   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.12
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -38.36
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 95.13
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -72.33
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -72.33
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  95.13
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9424.50
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 63.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  63.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9424.50
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 48.61
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  48.61
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -38.36
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 101.69
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 46.12
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 39.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  39.20
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  46.12
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -36.52
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -36.52
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  101.69
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2211.04
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2211.04
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 115.56
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  115.56
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.12
+|   |   |   |   |   |   |   |--- TFE Production solids SP <= 61.33
+|   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.19
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.19
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- TFE Production solids SP >  61.33
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2428.95
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2428.95
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- TFE Production solids SP >  64.77
+|   |   |   |   |   |   |--- TFE Out flow SP <= 2620.73
+|   |   |   |   |   |   |   |--- TFE Production solids SP <= 65.06
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2241.69
+|   |   |   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 123.51
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 49.85
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  49.85
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- TFE Steam pressure SP >  123.51
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2241.69
+|   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 41.49
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  41.49
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -71.16
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -71.16
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- TFE Production solids SP >  65.06
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 119.87
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.00
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2216.22
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2216.22
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 14
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.00
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 40.24
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  40.24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  119.87
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2187.45
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9385.37
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9385.37
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2187.45
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2229.06
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2229.06
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- TFE Out flow SP >  2620.73
+|   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 49.95
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  49.95
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |--- FFTE Feed flow SP >  9497.28
+|   |   |   |   |--- FFTE Out steam temp SP <= 49.87
+|   |   |   |   |   |--- FFTE Feed flow SP <= 9737.48
+|   |   |   |   |   |   |--- TFE Out flow SP <= 2121.94
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- TFE Out flow SP >  2121.94
+|   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 124.96
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 110.72
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -78.54
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -78.54
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -77.35
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -77.35
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  110.72
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- TFE Steam pressure SP >  124.96
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 64.02
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.99
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.99
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.24
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  64.02
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- FFTE Feed flow SP >  9737.48
+|   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -58.44
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9915.00
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2268.16
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2268.16
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9915.00
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 82.88
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -64.65
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -64.65
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -64.56
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -64.56
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  82.88
+|   |   |   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 124.91
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 109.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  109.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Steam pressure SP >  124.91
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -58.44
+|   |   |   |   |   |   |   |--- TFE Production solids SP <= 73.50
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -37.12
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -37.12
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -36.86
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -36.86
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Production solids SP >  73.50
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10039.26
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10039.26
+|   |   |   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 107.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Steam pressure SP >  107.50
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -58.38
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -58.38
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- FFTE Out steam temp SP >  49.87
+|   |   |   |   |   |--- FFTE Production solids SP <= 40.73
+|   |   |   |   |   |   |--- FFTE Feed flow SP <= 9501.34
+|   |   |   |   |   |   |   |--- FFTE Production solids SP <= 40.26
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 112.79
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 64.50
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 104.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  104.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  64.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  112.79
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 63.78
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  63.78
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 115.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  115.05
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- FFTE Production solids SP >  40.26
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 86.65
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  86.65
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -67.15
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -75.79
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -75.79
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -67.15
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2207.89
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2207.89
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- FFTE Feed flow SP >  9501.34
+|   |   |   |   |   |   |   |--- TFE Out flow SP <= 1985.37
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 100.06
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9798.97
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9798.97
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 60.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  60.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  100.06
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 117.50
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 104.58
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  104.58
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  117.50
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 39.75
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  39.75
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |--- TFE Out flow SP >  1985.37
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9696.55
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 101.55
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2046.64
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2046.64
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  101.55
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 120.38
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  120.38
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9696.55
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9704.63
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2054.90
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2054.90
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9704.63
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 49.92
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  49.92
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |--- FFTE Production solids SP >  40.73
+|   |   |   |   |   |   |--- FFTE Steam pressure SP <= 91.56
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -63.93
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2424.65
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 68.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  68.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2424.65
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -63.93
+|   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.00
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed tank level SP <= 37.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed tank level SP >  37.50
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 76.27
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  76.27
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.00
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9741.66
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9741.66
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- FFTE Steam pressure SP >  91.56
+|   |   |   |   |   |   |   |--- TFE Out flow SP <= 1926.43
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Out flow SP >  1926.43
+|   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 40.74
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  40.74
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -67.53
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2189.18
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 15
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2189.18
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 14
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -67.53
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 41.53
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  41.53
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |--- FFTE Steam pressure SP >  122.24
+|   |   |--- FFTE Feed flow SP <= 9411.62
+|   |   |   |--- TFE Out flow SP <= 2001.59
+|   |   |   |   |--- FFTE Production solids SP <= 40.45
+|   |   |   |   |   |--- FFTE Feed flow SP <= 9381.31
+|   |   |   |   |   |   |--- FFTE Feed flow SP <= 9376.97
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- FFTE Feed flow SP >  9376.97
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- FFTE Feed flow SP >  9381.31
+|   |   |   |   |   |   |--- FFTE Steam pressure SP <= 127.53
+|   |   |   |   |   |   |   |--- TFE Production solids SP <= 63.95
+|   |   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 120.27
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 125.28
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed tank level SP <= 37.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed tank level SP >  37.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  125.28
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- TFE Steam pressure SP >  120.27
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Production solids SP >  63.95
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.97
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 125.91
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  125.91
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 126.37
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  126.37
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.97
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- FFTE Steam pressure SP >  127.53
+|   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 123.45
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Steam pressure SP >  123.45
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 129.76
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 127.89
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 127.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  127.76
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  127.89
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -78.23
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 18
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -78.23
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  129.76
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.97
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 129.89
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  129.89
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.97
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- FFTE Production solids SP >  40.45
+|   |   |   |   |   |--- TFE Vacuum pressure SP <= -61.94
+|   |   |   |   |   |   |--- TFE Out flow SP <= 1759.05
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- TFE Out flow SP >  1759.05
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9300.37
+|   |   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 120.03
+|   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 41.84
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  41.84
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9200.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9200.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- TFE Steam pressure SP >  120.03
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.05
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.87
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.87
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.05
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 124.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  124.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9300.37
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 67.96
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.79
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.81
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.81
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.79
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  67.96
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.93
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -74.09
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -74.09
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.93
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 70.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  70.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- TFE Vacuum pressure SP >  -61.94
+|   |   |   |   |   |   |--- FFTE Steam pressure SP <= 123.50
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -61.80
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -61.80
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- FFTE Steam pressure SP >  123.50
+|   |   |   |   |   |   |   |--- TFE Production solids SP <= 19.00
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 1882.15
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  1882.15
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Production solids SP >  19.00
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |--- TFE Out flow SP >  2001.59
+|   |   |   |   |--- TFE Out flow SP <= 2281.76
+|   |   |   |   |   |--- TFE Production solids SP <= 72.50
+|   |   |   |   |   |   |--- FFTE Production solids SP <= 41.60
+|   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.11
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 123.01
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 122.94
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -45.54
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -45.54
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  122.94
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 64.84
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  64.84
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  123.01
+|   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 40.54
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 49.58
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  49.58
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  40.54
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 125.97
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  125.97
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.11
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 124.87
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -60.90
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -60.90
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  124.87
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- FFTE Production solids SP >  41.60
+|   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 129.09
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9388.53
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 70.13
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 67.59
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  67.59
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  70.13
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.25
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.25
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9388.53
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 69.69
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 61.13
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  61.13
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  69.69
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 70.01
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  70.01
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  129.09
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9396.74
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.96
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.11
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.96
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 25.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  25.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9396.74
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 131.00
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 64.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  64.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  131.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- TFE Production solids SP >  72.50
+|   |   |   |   |   |   |--- TFE Out flow SP <= 2215.20
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- TFE Out flow SP >  2215.20
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- TFE Out flow SP >  2281.76
+|   |   |   |   |   |--- TFE Out flow SP <= 2508.45
+|   |   |   |   |   |   |--- FFTE Feed flow SP <= 9320.99
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.85
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 62.50
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 50.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  50.00
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 45.35
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  45.35
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  62.50
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.85
+|   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 40.27
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  40.27
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 61.50
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 61.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  61.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  61.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- FFTE Feed flow SP >  9320.99
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- TFE Out flow SP >  2508.45
+|   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.00
+|   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 125.08
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9330.73
+|   |   |   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 120.24
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 64.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  64.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- TFE Steam pressure SP >  120.24
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9330.73
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  125.08
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 64.94
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  64.94
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 128.77
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  128.77
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -75.69
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -75.69
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.00
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9165.00
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2605.06
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2605.06
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9165.00
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 64.50
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2542.56
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2542.56
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -46.26
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -46.26
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  64.50
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -77.99
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 127.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  127.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -77.99
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |--- FFTE Feed flow SP >  9411.62
+|   |   |   |--- TFE Steam pressure SP <= 83.75
+|   |   |   |   |--- class: 0
+|   |   |   |--- TFE Steam pressure SP >  83.75
+|   |   |   |   |--- FFTE Steam pressure SP <= 129.59
+|   |   |   |   |   |--- FFTE Production solids SP <= 40.51
+|   |   |   |   |   |   |--- TFE Steam pressure SP <= 120.08
+|   |   |   |   |   |   |   |--- TFE Out flow SP <= 2207.89
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2093.07
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 63.50
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2037.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2037.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  63.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2093.07
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Out flow SP >  2207.89
+|   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 40.19
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9700.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9700.00
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2672.35
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2672.35
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  40.19
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 45.35
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  45.35
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 124.42
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  124.42
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- TFE Steam pressure SP >  120.08
+|   |   |   |   |   |   |   |--- TFE Out flow SP <= 2207.89
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Out flow SP >  2207.89
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2411.11
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 128.06
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  128.06
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2411.11
+|   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 40.28
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 39.78
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  39.78
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  40.28
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- FFTE Production solids SP >  40.51
+|   |   |   |   |   |   |--- TFE Production solids SP <= 69.83
+|   |   |   |   |   |   |   |--- TFE Out flow SP <= 1941.10
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 128.34
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  128.34
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- TFE Out flow SP >  1941.10
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2189.17
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -72.47
+|   |   |   |   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 120.36
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- TFE Steam pressure SP >  120.36
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -72.47
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -54.61
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -54.61
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2189.17
+|   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 40.97
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -71.39
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -71.39
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  40.97
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 65.02
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  65.02
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |--- TFE Production solids SP >  69.83
+|   |   |   |   |   |   |   |--- TFE Production solids SP <= 72.87
+|   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.05
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 125.68
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  125.68
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 71.06
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  71.06
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.05
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.20
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.20
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 70.17
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  70.17
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- TFE Production solids SP >  72.87
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10082.10
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10082.10
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- FFTE Steam pressure SP >  129.59
+|   |   |   |   |   |--- FFTE Production solids SP <= 40.53
+|   |   |   |   |   |   |--- FFTE Out steam temp SP <= 44.99
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- FFTE Out steam temp SP >  44.99
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9750.00
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9464.18
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9464.18
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 130.00
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.67
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.67
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  130.00
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -52.51
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -52.51
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9750.00
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.99
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.99
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- FFTE Production solids SP >  40.53
+|   |   |   |   |   |   |--- FFTE Out steam temp SP <= 49.94
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10145.77
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 146.61
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  146.61
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10145.77
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- FFTE Out steam temp SP >  49.94
+|   |   |   |   |   |   |   |--- TFE Out flow SP <= 2673.74
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9504.72
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 1947.28
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 68.36
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  68.36
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  1947.28
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 41.85
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  41.85
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9504.72
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 142.56
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2560.83
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2560.83
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  142.56
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |--- TFE Out flow SP >  2673.74
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 9550.00
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -70.05
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 58.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  58.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -70.05
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  9550.00
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.68
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 73.90
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  73.90
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.68
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|--- FFTE Feed flow SP >  10199.77
+|   |--- TFE Production solids SP <= 84.57
+|   |   |--- FFTE Out steam temp SP <= 50.12
+|   |   |   |--- TFE Production solids SP <= 66.99
+|   |   |   |   |--- FFTE Steam pressure SP <= 117.10
+|   |   |   |   |   |--- TFE Production solids SP <= 65.01
+|   |   |   |   |   |   |--- TFE Out flow SP <= 2951.34
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -44.76
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -75.57
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 106.24
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 42.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  42.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  106.24
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10700.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10700.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -75.57
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 95.80
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10228.28
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10228.28
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  95.80
+|   |   |   |   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 87.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- TFE Steam pressure SP >  87.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -44.76
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 96.31
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10300.00
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 90.36
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  90.36
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10300.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  96.31
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- TFE Out flow SP >  2951.34
+|   |   |   |   |   |   |   |--- TFE Out flow SP <= 2990.36
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10496.56
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 34.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  34.00
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 114.51
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  114.51
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10496.56
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -63.23
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -63.23
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -57.55
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -57.55
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Out flow SP >  2990.36
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 103.08
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  103.08
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- TFE Production solids SP >  65.01
+|   |   |   |   |   |   |--- TFE Out flow SP <= 2990.36
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10699.34
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 112.22
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  112.22
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -46.12
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -46.12
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10699.34
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- TFE Out flow SP >  2990.36
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -77.28
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -77.28
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- FFTE Steam pressure SP >  117.10
+|   |   |   |   |   |--- TFE Out flow SP <= 2146.97
+|   |   |   |   |   |   |--- TFE Production solids SP <= 53.50
+|   |   |   |   |   |   |   |--- TFE Out flow SP <= 1877.09
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- TFE Out flow SP >  1877.09
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- TFE Production solids SP >  53.50
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -47.50
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -47.50
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- TFE Out flow SP >  2146.97
+|   |   |   |   |   |   |--- TFE Out flow SP <= 2929.19
+|   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 135.96
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 66.04
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10277.81
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2432.56
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2432.56
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10277.81
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 49.83
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  49.83
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  66.04
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.05
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.05
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  135.96
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10300.34
+|   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP <= 42.64
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- FFTE Production solids SP >  42.64
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -45.41
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -45.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10300.34
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP <= 2849.40
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10450.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10450.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- TFE Out flow SP >  2849.40
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- TFE Out flow SP >  2929.19
+|   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 119.05
+|   |   |   |   |   |   |   |   |--- FFTE Feed tank level SP <= 37.50
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FFTE Feed tank level SP >  37.50
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 118.99
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  118.99
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  119.05
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.97
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.97
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 4.00
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  4.00
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 65.95
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  65.95
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- TFE Production solids SP >  66.99
+|   |   |   |   |--- TFE Production solids SP <= 78.22
+|   |   |   |   |   |--- FFTE Steam pressure SP <= 140.03
+|   |   |   |   |   |   |--- TFE Out flow SP <= 2632.48
+|   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 124.29
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  124.29
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 71.50
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -59.76
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.90
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.90
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -59.76
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.10
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.10
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Production solids SP >  71.50
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- TFE Out flow SP >  2632.48
+|   |   |   |   |   |   |   |--- TFE Production solids SP <= 75.97
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 105.38
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 85.01
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10412.24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10412.24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  85.01
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 70.95
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  70.95
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  105.38
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -76.78
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 70.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  70.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -76.78
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 68.93
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 15
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  68.93
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 15
+|   |   |   |   |   |   |   |--- TFE Production solids SP >  75.97
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 119.00
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 76.08
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  76.08
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 105.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  105.76
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  119.00
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 130.41
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  130.41
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- FFTE Steam pressure SP >  140.03
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- TFE Production solids SP >  78.22
+|   |   |   |   |   |--- TFE Vacuum pressure SP <= -62.42
+|   |   |   |   |   |   |--- TFE Out flow SP <= 2893.35
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- TFE Out flow SP >  2893.35
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- TFE Vacuum pressure SP >  -62.42
+|   |   |   |   |   |   |--- TFE Production solids SP <= 82.66
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -47.88
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -47.88
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -47.47
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 117.03
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  117.03
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -47.47
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- TFE Production solids SP >  82.66
+|   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 119.86
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  119.86
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |--- FFTE Out steam temp SP >  50.12
+|   |   |   |--- FFTE Out steam temp SP <= 51.00
+|   |   |   |   |--- FFTE Steam pressure SP <= 127.69
+|   |   |   |   |   |--- TFE Production solids SP <= 65.66
+|   |   |   |   |   |   |--- TFE Out flow SP <= 2720.09
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- TFE Out flow SP >  2720.09
+|   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 121.31
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- TFE Steam pressure SP >  121.31
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- TFE Production solids SP >  65.66
+|   |   |   |   |   |   |--- FFTE Steam pressure SP <= 120.87
+|   |   |   |   |   |   |   |--- TFE Production solids SP <= 68.83
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- TFE Production solids SP >  68.83
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 120.38
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -57.48
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -57.48
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  120.38
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 73.50
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 120.83
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  120.83
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  73.50
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- FFTE Steam pressure SP >  120.87
+|   |   |   |   |   |   |   |--- TFE Steam pressure SP <= 121.37
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10337.15
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -53.59
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 127.60
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  127.60
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -53.59
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10337.15
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Steam pressure SP >  121.37
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |--- FFTE Steam pressure SP >  127.69
+|   |   |   |   |   |--- FFTE Out steam temp SP <= 50.76
+|   |   |   |   |   |   |--- TFE Production solids SP <= 2.50
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- TFE Production solids SP >  2.50
+|   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 50.25
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 134.76
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  134.76
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  50.25
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- FFTE Out steam temp SP >  50.76
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- FFTE Out steam temp SP >  51.00
+|   |   |   |   |--- TFE Production solids SP <= 69.38
+|   |   |   |   |   |--- TFE Vacuum pressure SP <= -59.69
+|   |   |   |   |   |   |--- FFTE Steam pressure SP <= 124.03
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- FFTE Steam pressure SP >  124.03
+|   |   |   |   |   |   |   |--- TFE Out flow SP <= 2822.79
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10400.00
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -79.94
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP <= 68.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- TFE Production solids SP >  68.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -79.94
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10400.00
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- TFE Out flow SP >  2822.79
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- TFE Vacuum pressure SP >  -59.69
+|   |   |   |   |   |   |--- TFE Out flow SP <= 2760.63
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- TFE Out flow SP >  2760.63
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP <= 10350.00
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 128.49
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP <= 119.71
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed tank level SP <= 40.26
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed tank level SP >  40.26
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  119.71
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed tank level SP <= 37.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- FFTE Feed tank level SP >  37.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- FFTE Steam pressure SP >  128.49
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- FFTE Feed flow SP >  10350.00
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- TFE Production solids SP >  69.38
+|   |   |   |   |   |--- TFE Production solids SP <= 71.05
+|   |   |   |   |   |   |--- FFTE Steam pressure SP <= 130.05
+|   |   |   |   |   |   |   |--- TFE Out flow SP <= 2822.79
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- TFE Out flow SP >  2822.79
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- FFTE Steam pressure SP >  130.05
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -69.44
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -75.40
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -75.40
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -73.35
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -73.35
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -69.44
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- TFE Production solids SP >  71.05
+|   |   |   |   |   |   |--- TFE Production solids SP <= 76.73
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP <= -36.69
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- TFE Vacuum pressure SP >  -36.69
+|   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP <= 52.75
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- FFTE Out steam temp SP >  52.75
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- TFE Production solids SP >  76.73
+|   |   |   |   |   |   |   |--- class: 1
+|   |--- TFE Production solids SP >  84.57
+|   |   |--- FFTE Feed tank level SP <= 37.50
+|   |   |   |--- TFE Vacuum pressure SP <= -40.68
+|   |   |   |   |--- class: 0
+|   |   |   |--- TFE Vacuum pressure SP >  -40.68
+|   |   |   |   |--- class: 2
+|   |   |--- FFTE Feed tank level SP >  37.50
+|   |   |   |--- TFE Vacuum pressure SP <= -47.44
+|   |   |   |   |--- class: 2
+|   |   |   |--- TFE Vacuum pressure SP >  -47.44
+|   |   |   |   |--- TFE Steam pressure SP <= 115.00
+|   |   |   |   |   |--- class: 2
+|   |   |   |   |--- TFE Steam pressure SP >  115.00
+|   |   |   |   |   |--- TFE Vacuum pressure SP <= -36.40
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- TFE Vacuum pressure SP >  -36.40
+|   |   |   |   |   |   |--- TFE Production solids SP <= 86.50
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- TFE Production solids SP >  86.50
+|   |   |   |   |   |   |   |--- class: 1
